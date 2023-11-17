@@ -1,0 +1,7 @@
+This is a template that installs a Node | Express | Typescript project.
+
+Use
+
+```
+npx node-express-ts-template <project-name>
+```

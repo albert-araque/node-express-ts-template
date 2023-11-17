@@ -1,6 +1,7 @@
 {
   "name": "node-express-ts-template",
   "version": "1.0.0",
+  "main": "install.js",
   "scripts": {
     "install": "node install.js"
   }
