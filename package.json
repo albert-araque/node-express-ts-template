@@ -1,23 +1,33 @@
 {
   "name": "node-express-ts-template",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Node.js Express TypeScript Template",
   "type": "module",
-  "main": "install.ts",
+  "main": "dist/install.js",
+  "bin": {
+    "node-express-ts-template": "./dist/install.js"
+  },
+  "files": [
+    "dist",
+    "template-files"
+  ],
   "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
     "start": "tsx install.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "@types/inquirer": "^9.0.7",
     "@types/boxen": "^3.0.1",
-    "typescript": "^5.3.3",
-    "tsx": "^4.7.1"
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.17.50",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
-    "inquirer": "^9.2.12",
+    "boxen": "^7.1.1",
     "chalk": "^5.3.0",
-    "ora": "^7.0.1",
-    "boxen": "^7.1.1"
+    "dotenv": "^16.5.0",
+    "inquirer": "^9.2.12",
+    "ora": "^7.0.1"
   }
 }

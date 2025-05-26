@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -47,7 +49,7 @@ async function getFolderName(): Promise<string> {
 async function main() {
   try {
     const folderName = await getFolderName();
-    const templatePath = path.join(__dirname, "template-files");
+    const templatePath = path.join(__dirname, "..", "template-files");
     const destinationPath = path.join(process.cwd(), folderName);
 
     // Create folder
